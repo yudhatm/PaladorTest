@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PaladorTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sdw-T6-ZFW">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rY7-e1-c3q">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="500"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Yq2-ae-FgC">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="500"/>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="Yq2-ae-FgC" firstAttribute="leading" secondItem="rY7-e1-c3q" secondAttribute="leading" id="MAs-oZ-TcD"/>
+                                            <constraint firstAttribute="height" constant="500" placeholder="YES" id="Prg-FQ-2Ql"/>
+                                            <constraint firstItem="Yq2-ae-FgC" firstAttribute="top" secondItem="rY7-e1-c3q" secondAttribute="top" id="f71-cF-MIy"/>
+                                            <constraint firstAttribute="trailing" secondItem="Yq2-ae-FgC" secondAttribute="trailing" id="g3d-In-Cer"/>
+                                            <constraint firstAttribute="bottom" secondItem="Yq2-ae-FgC" secondAttribute="bottom" id="gHY-gN-ypp"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="rY7-e1-c3q" secondAttribute="bottom" id="C9p-9h-4Za"/>
+                                    <constraint firstItem="rY7-e1-c3q" firstAttribute="leading" secondItem="Sdw-T6-ZFW" secondAttribute="leading" id="eGM-lt-F9J"/>
+                                    <constraint firstAttribute="trailing" secondItem="rY7-e1-c3q" secondAttribute="trailing" id="kyM-Yg-Hoc"/>
+                                    <constraint firstItem="rY7-e1-c3q" firstAttribute="top" secondItem="Sdw-T6-ZFW" secondAttribute="top" id="pD5-ji-3hH"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Yg2-SA-KCr"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="LA8-Rq-Gdr"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Sdw-T6-ZFW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SVj-Gk-jEF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Sdw-T6-ZFW" secondAttribute="bottom" id="WL8-Za-XdS"/>
+                            <constraint firstItem="rY7-e1-c3q" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="evo-7M-g3P"/>
+                            <constraint firstItem="Sdw-T6-ZFW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="r5n-h2-mRg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Sdw-T6-ZFW" secondAttribute="trailing" id="v1B-VO-Kmi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mainStackView" destination="Yq2-ae-FgC" id="Dqh-jh-SyX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.188405797101453" y="77.678571428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
